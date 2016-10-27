@@ -49,6 +49,7 @@ class TestCalculator < MiniTest::Test
   end
 
   def test_multiplies_several_numbers
+    assert_equal 3800, multiply(4,38,25)
   end
 
 # http://en.wikipedia.org/wiki/Factorial
