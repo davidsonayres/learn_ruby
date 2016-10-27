@@ -53,18 +53,27 @@ class TestCalculator < MiniTest::Test
   end
 
 # http://en.wikipedia.org/wiki/Factorial
+# In mathematics, the factorial of a non-negative integer n, denoted by n!, is the product of all positive integers less than or equal to n. For example,
+#
+# {\displaystyle 5!=5\times 4\times 3\times 2\times 1=120.\ } 5!=5\times 4\times 3\times 2\times 1=120.\
+
   def test_computes_factorial_0
+    assert_equal 1, factorial(0)
   end
 
   def test_computes_factorial_1
+    assert_equal 1, factorial(1)
   end
 
   def test_computes_factorial_2
+    assert_equal 2, factorial(2)
   end
 
   def test_computes_factorial_5
+    assert_equal 120, factorial(5)
   end
 
   def test_computes_factorial_10
+    assert_equal 3628800, factorial(10)
   end
 end
