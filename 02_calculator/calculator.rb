@@ -3,5 +3,13 @@ def add(a, b)
 end
 
 def subtract(a, b)
-  b - a
+  a - b
+end
+
+def sum(array)
+  sum = 0
+  array.each do |n|
+    sum += n
+  end
+  sum
 end
