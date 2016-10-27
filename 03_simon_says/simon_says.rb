@@ -30,3 +30,16 @@ def first_word(string)
   array = string.split(" ")
   array[0]
 end
+
+def titleize(string)
+  array = string.split(" ")
+  array.each do |word|
+    if word == "if", "and", "or", "the", "an", "a"
+      word.downcase
+    elsif word == array[0]
+      word.capitalize!
+    else
+      word.capitalize!
+    end
+  end
+end
