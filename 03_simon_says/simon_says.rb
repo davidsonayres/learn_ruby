@@ -21,7 +21,12 @@ def repeat(string, num = 2)
 end
 
 def start_of_word(word, num = 0)
-  array = word.split!
+  array = word.split("")
   letter = num - 1
   array(letter)
+end
+
+def first_word(string)
+  array = string.split(" ")
+  array[0]
 end
