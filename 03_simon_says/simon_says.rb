@@ -1,9 +1,9 @@
 def echo(string)
-  return string
+  string
 end
 
 def shout(string)
-  return string.capitalize
+  string.upcase!
 end
 
 # def repeat(string)
@@ -14,16 +14,16 @@ end
 #   return string + " " + string
 # end
 
-def repeat(string, num = 2)
-  num.times do
-    return string
+def repeat(string, num=2)
+  num.times do |s|
+    print "#{string} "
   end
 end
 
 def start_of_word(word, num = 0)
-  array = word.split("")
-  letter = num - 1
-  array(letter)
+  letters = word.split("")
+  l = num - 1
+  letters(l)
 end
 
 def first_word(string)
