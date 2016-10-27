@@ -19,3 +19,9 @@ def repeat(string, num = 2)
     return string
   end
 end
+
+def start_of_word(word, num = 0)
+  array = word.split!
+  letter = num - 1
+  array(letter)
+end
