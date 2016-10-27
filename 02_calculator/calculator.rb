@@ -20,5 +20,9 @@ end
 
 def factorial(n)
   array = 0..n
+  if n == 0
+    return 1
+  else
   array.inject(&:*)
+  end
 end
