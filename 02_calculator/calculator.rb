@@ -13,3 +13,7 @@ def sum(array)
   end
   sum
 end
+
+def multiply(a, b)
+  a * b
+end
