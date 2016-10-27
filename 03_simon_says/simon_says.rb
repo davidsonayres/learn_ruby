@@ -1,3 +1,7 @@
-def echo(yell)
-  return yell
+def echo(string)
+  return string
+end
+
+def shout(string)
+  return string.capitalize
 end
