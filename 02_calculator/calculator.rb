@@ -17,3 +17,8 @@ end
 def multiply(*nums)
   nums.inject(&:*)
 end
+
+def factorial(n)
+  array = 0..n
+  array.inject(&:*)
+end
