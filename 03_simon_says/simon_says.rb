@@ -33,13 +33,17 @@ end
 
 def titleize(string)
   array = string.split(" ")
+  ignore = ["if", "and", "or", "the", "an", "a"]
   array.each do |word|
-    if word == "if", "and", "or", "the", "an", "a"
-      word.downcase
-    elsif word == array[0]
-      word.capitalize!
+    if word == ignore.each
+      word.downcase!
+      unless word = array[0]
+        word.capitalize!
+      end
     else
       word.capitalize!
     end
   end
+  title = array.join(" ")
+  return title
 end
